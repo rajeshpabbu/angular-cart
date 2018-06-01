@@ -1,0 +1,22 @@
+<div class="todo-list-container">
+  <div class="empty-list-message" *ngIf="todos && !todos.length">
+    <p class="message">There are no todos found. Please click here to add a new todo</p>
+  </div>
+  <div *ngIf="todos && todos.length">
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" 
+        *ngFor="let tab of filterTabs"
+        [ngClass]="{'btn-success': filterBy === tab.filterBy}"
+        (click)="filterTodos(tab.filterBy)"      
+        class="btn">{{tab.filterBy}}</button>
+    </div>
+    <ul class="list-group">
+      <li *ngFor="let todo of filteredTodos" class="list-group-item {{todo.status.toLowerCase()}}">
+        <span class="oi oi-task change-status" (click)="updateStatus(todo)"></span>
+        <span class="todo-name">{{todo.name}}</span>
+        <span class="badge badge-{{todo.status.toLowerCase()}}">{{todo.status}}</span>
+        <span (click)="removeTodo(todo)" class="oi oi-trash remove" aria-label="Remove"></span>
+      </li>
+    </ul>
+  </div>
+</div>

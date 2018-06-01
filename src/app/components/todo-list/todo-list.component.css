@@ -1,0 +1,66 @@
+.todo-list-container{
+    padding: 0 15px;    
+    margin-top: 1px;
+}
+.empty-list-message {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    padding: 150px 0;
+}
+.btn-group {
+    display: block;
+    text-align: center;
+    margin: 10px auto
+}
+.btn-group button {
+    cursor: pointer
+}   
+.list-group {
+    height: 476px;
+    overflow: auto;
+}
+.list-group-item, .tab-container {
+    margin-bottom: 5px;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px 0 rgba(168, 0, 168, 0.15);
+    background-color: #fff;
+}
+.tab-container {
+    margin-bottom: 10px
+}
+.list-group-item .todo-name{
+    width: 500px;
+    display: inline-block;
+    padding-left: 15px
+}
+.oi {
+    font-size: 1.2em;
+    cursor: pointer;    
+}
+.change-status.oi-task:before {
+    color: #ccc;
+}
+.completed .change-status.oi-task:before {
+    border-color: #008000;
+    color: #008000
+}
+span.remove {
+    float: right;
+    opacity: 0.6;
+        cursor: pointer
+}
+span.remove:focus, span.remove:hover {
+    opacity: 1
+}
+.badge {
+    border: 1px solid;
+}
+.badge-pending {
+    background-color: #f0ad4e;
+    border-color: #f0ad4e;
+}
+.badge-completed {
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+}

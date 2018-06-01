@@ -1,0 +1,23 @@
+.input-container {    
+    border-radius: 3px 3px 0 0;
+    box-shadow: 0 2px 0 0 rgba(168,0,168,0.1);
+    padding: 20px  
+}
+.input-container .row {
+    width: 70%;
+    margin: 0 auto;
+}
+.input-container input, .form-group input {
+    height: 38px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    background: transparent;
+    border: 1px solid #d5dce0;
+    border-radius: 5px;
+    line-height: 22px;
+    padding: 1px 15px 0 30px;
+    width: 100%;
+}
+.advanced {
+    cursor: pointer
+}

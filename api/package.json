@@ -1,0 +1,16 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
+  },
+  "author": "Steven Rogers <steven.rogers909@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "mongojs": "^2.4.1",    
+    "node-colorify": "^2.0.1",
+    "restify": "^6.3.4"
+  }
+}

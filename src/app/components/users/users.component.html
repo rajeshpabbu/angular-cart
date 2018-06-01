@@ -1,0 +1,28 @@
+<div class="todo-grid">
+  <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+      <li class="breadcrumb-item active">Users</li>
+    </ol>
+  <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Username</th>
+      <th scope="col">Role</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users index as i">
+      <td>{{i + 1}}</td>
+      <td>{{user.firstName}}</td>
+      <td>{{user.lastName}}</td>
+      <td>{{user.username}}</td>
+      <td>{{user.role}}</td>
+      <td><span (click)="removeUser(user)" class="oi oi-trash remove" aria-label="Remove"></span></td>
+    </tr>
+  </tbody>
+</table>
+</div>

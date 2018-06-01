@@ -1,0 +1,29 @@
+<header class="clearfix">
+  <div class="logo-container float-md-left">
+      <a routerLink="/"><img src="" alt="logo" /></a>
+  </div>
+  <nav class="navbar float-sm-right" *ngIf="!!currentUser._id">
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/users">Users</a>
+      </li>
+      <li class="nav-item">
+        <a class="profile-pic" placement="bottom" #p="ngbPopover" [ngbPopover]="activeuser"><span></span></a>
+      </li>
+    </ul>
+    <ng-template #activeuser>
+      <div class="row profile-popover">
+        <div class="col-sm-3">
+          <a class="profile-pic"><span></span></a>
+        </div>
+        <div class="col-sm-9">
+          <p><strong>{{currentUser.firstName}} {{currentUser.lastName}}</strong></p>
+        </div>
+      </div>
+      <div class="profile-bottom">
+          <a class="btn btn-secondary float-left" routerLink="/my-account">My account</a>
+          <a class="btn float-right btn-secondary " (click)="p.close(); logout()">Sign out</a>
+      </div>
+    </ng-template>
+  </nav>
+</header>

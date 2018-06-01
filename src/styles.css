@@ -1,0 +1,59 @@
+body {
+    background-color: #f1f4f5;
+    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;    
+}
+.btn {
+    cursor: pointer;
+}
+.todo-grid {
+    padding: 15px
+}
+.todo-grid table {
+    box-shadow: 0 1px 3px 0 rgba(168, 0, 168, 0.15)
+}
+/* .todo-grid table td, .todo-grid table th {
+    border-color: rgba(168, 0, 168, 0.15)
+} */
+header .popover-body {
+    box-shadow: 0 2px 10px rgba(168,0,168,0.1);
+    padding: 0
+}
+header .popover {
+    width: 276px;
+    font-size: 13px
+}
+.login-container, .register-container {
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.login-container .card, .register-container .card {
+    box-shadow: 0 2px 10px rgba(168,0,168,0.1);
+}
+.login-container .card-block, .register-container .card-block {
+    padding: 20px
+}
+.btn-secondary {
+    color: #292b2c;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn-secondary:hover {
+    color: #292b2c;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+.has-error .help-block {
+    color: #ff0000;
+    padding: 6px 0;
+    font-size: 13px;
+}
+.has-error input {
+    border-color: #ff0000 
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
